@@ -48,6 +48,10 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Gapps
 ifeq ($(WITH_GAPPS),true)
 $(call inherit-product-if-exists, vendor/google/gms/config.mk)
