@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     Launcher3
 
+# World APN list
+PRODUCT_PACKAGES += \
+    apns-conf.xml
+
 # Gapps
 ifeq ($(WITH_GAPPS),true)
 $(call inherit-product-if-exists, vendor/google/gms/config.mk)
