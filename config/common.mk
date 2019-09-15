@@ -57,6 +57,9 @@ ifeq ($(WITH_GAPPS),true)
 $(call inherit-product-if-exists, vendor/google/gms/config.mk)
 endif
 
+# Fonts
+include vendor/fuse/config/fonts.mk
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
