@@ -44,3 +44,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 ifeq ($(WITH_GAPPS),true)
 $(call inherit-product-if-exists, vendor/google/gms/config.mk)
 endif
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
