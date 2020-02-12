@@ -25,6 +25,9 @@ $(call inherit-product, vendor/fuse/config/BoardConfigFuse.mk)
 # Inherit boot animation
 $(call inherit-product, vendor/fuse/config/bootanimation.mk)
 
+# Inherit from audio config
+$(call inherit-product, vendor/fuse/config/audio.mk)
+
 # Vendor overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 
