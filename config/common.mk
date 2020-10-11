@@ -22,6 +22,9 @@ $(call inherit-product, vendor/fuse/config/versioning.mk)
 # Inherit from our kernel/header generator
 $(call inherit-product, vendor/fuse/config/BoardConfigFuse.mk)
 
+# Inherit boot animation
+$(call inherit-product, vendor/fuse/config/bootanimation.mk)
+
 # Vendor overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 
