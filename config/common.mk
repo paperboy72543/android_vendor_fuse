@@ -37,6 +37,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     apns-conf.xml
 
+# Disable extra StrictMode features on all non-engineering builds
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
+
 # Gapps
 ifeq ($(WITH_GAPPS),true)
 $(call inherit-product-if-exists, vendor/google/gms/config.mk)
