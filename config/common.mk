@@ -34,8 +34,6 @@ $(call inherit-product, device/fuse/sepolicy/common/sepolicy.mk)
 # Vendor overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/fuse/config/device_framework_matrix.xml
-
 # Apps
 PRODUCT_PACKAGES += \
     ThemePicker \
