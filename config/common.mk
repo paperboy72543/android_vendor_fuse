@@ -25,3 +25,7 @@ $(call inherit-product, vendor/fuse/config/BoardConfigFuse.mk)
 # Vendor overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 
+# Apps
+PRODUCT_PACKAGES += \
+    ThemePicker \
+    Launcher3
