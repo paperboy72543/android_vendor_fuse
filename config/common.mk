@@ -32,3 +32,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 PRODUCT_PACKAGES += \
     ThemePicker \
     Launcher3
+
+# Gapps
+ifeq ($(WITH_GAPPS),true)
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+endif
