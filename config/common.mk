@@ -97,3 +97,5 @@ PRODUCT_PACKAGES += \
 # Themed icons
 $(call inherit-product, packages/overlays/ThemeIcons/config.mk)
 
+# Inherit from rro_overlays config
+$(call inherit-product, vendor/fuse/config/rro_overlays.mk)
