@@ -40,6 +40,9 @@ PRODUCT_PACKAGES += \
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 
+# Include Icon Packs
+include vendor/fuse/config/iconpacks.mk
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
