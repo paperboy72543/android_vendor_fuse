@@ -34,7 +34,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 # Apps
 PRODUCT_PACKAGES += \
     ThemePicker \
-    Launcher3
+    Launcher3 \
+    BlackHole
 
 # World APN list
 PRODUCT_PACKAGES += \
