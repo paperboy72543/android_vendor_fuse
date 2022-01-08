@@ -92,6 +92,10 @@ endif
 # Fonts
 include vendor/fuse/config/fonts.mk
 
+# Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
