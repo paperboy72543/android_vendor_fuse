@@ -71,6 +71,12 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Quick Tap
+ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+PRODUCT_COPY_FILES += \
+    vendor/fuse/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+endif
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
