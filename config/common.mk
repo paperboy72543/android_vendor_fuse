@@ -93,3 +93,7 @@ include vendor/fuse/config/fonts.mk
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
+
+# Themed icons
+$(call inherit-product, packages/overlays/ThemeIcons/config.mk)
+
