@@ -83,7 +83,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Gapps
 ifeq ($(WITH_GAPPS),true)
-$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 endif
 
 # Fonts
