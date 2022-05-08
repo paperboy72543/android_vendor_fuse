@@ -28,6 +28,9 @@ $(call inherit-product, vendor/fuse/config/bootanimation.mk)
 # Inherit from audio config
 $(call inherit-product, vendor/fuse/config/audio.mk)
 
+# SEPolicy
+$(call inherit-product, device/fuse/sepolicy/common/sepolicy.mk)
+
 # Vendor overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 
