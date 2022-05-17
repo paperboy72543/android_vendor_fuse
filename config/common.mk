@@ -41,7 +41,8 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     Launcher3 \
     BlackHole \
-    FuseWalls
+    FuseWalls \
+    GameSpace
 
 # World APN list
 PRODUCT_PACKAGES += \
